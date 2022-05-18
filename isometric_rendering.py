@@ -7,7 +7,7 @@ pygame.display.set_caption('game base')
 screen = pygame.display.set_mode((900,900),0,32)
 display = pygame.Surface((300, 300))
 
-grass_img = pygame.image.load('grass.png').convert()
+grass_img = pygame.image.load('ground.png').convert()
 grass_img.set_colorkey((0,0,0))
 
 f = open('map.txt')
