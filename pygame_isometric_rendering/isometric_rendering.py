@@ -21,6 +21,7 @@ while True:
         for x, title in enumerate(row):
             if title:
                 pygame.draw.rect(display, (255,255,255), pygame.Rect(x * 10, y * 10, 10, 10), 1)
+                display.blit(grass_img, (150 + x * 10 - y * 10, 100 + x * 6 + y * 6))
 
     for event in pygame.event.get():
         if event.type == QUIT:
