@@ -17,7 +17,7 @@ class SoftwareRender:
     def create_objects(self):
         self.camera = Camera(self, [-5, 6, -55])
         self.projection = Projection(self)
-        self.object = self.get_object_from_file('resources/cat.obj')
+        self.object = self.get_object_from_file('resources/tank.obj')
         self.object.rotate_y(-math.pi / 4)
 
     def get_object_from_file(self, filename):
